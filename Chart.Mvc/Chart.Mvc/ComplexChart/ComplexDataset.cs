@@ -3,14 +3,14 @@
 namespace Chart.Mvc.ComplexChart
 {
     /// <summary>
-    /// The complext dataset.
+    /// The complex dataset.
     /// </summary>
-    public class ComplextDataset
+    public class ComplexDataset
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ComplextDataset"/> class.
+        /// Initializes a new instance of the <see cref="ComplexDataset"/> class.
         /// </summary>
-        public ComplextDataset()
+        public ComplexDataset()
         {
             this.Data = new List<double>();
         }

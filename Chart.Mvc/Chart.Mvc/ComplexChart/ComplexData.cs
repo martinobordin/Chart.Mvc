@@ -13,7 +13,7 @@ namespace Chart.Mvc.ComplexChart
         public ComplexData()
         {
             this.Labels = new List<string>();
-            this.Datasets = new List<ComplextDataset>();
+            this.Datasets = new List<ComplexDataset>();
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets or sets the datasets.
         /// </summary>
-        public List<ComplextDataset> Datasets
+        public List<ComplexDataset> Datasets
         {
             get;
             set;

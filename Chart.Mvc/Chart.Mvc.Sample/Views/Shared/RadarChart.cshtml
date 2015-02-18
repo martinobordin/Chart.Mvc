@@ -1,0 +1,10 @@
+﻿@{
+    const string Canvas = "RadarChart";
+    var complexChart = new RadarChart();
+    complexChart.ComplexData.Labels.AddRange(FakeComplexChartData.Labels);
+    complexChart.ComplexData.Datasets.AddRange(FakeComplexChartData.Datasets);
+}
+<h3>@Canvas</h3>
+<canvas id="@Canvas" width="400" height="400"></canvas>
+
+@Html.CreateChart(Canvas, complexChart)

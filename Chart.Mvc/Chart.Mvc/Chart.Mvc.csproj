@@ -77,15 +77,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplexChart\Bar\BarChart.cs" />
+    <Compile Include="ComplexChart\Bar\BarChartOptions.cs" />
     <Compile Include="ComplexChart\ComplexChartBase.cs" />
     <Compile Include="ComplexChart\ComplexChartOptions.cs" />
     <Compile Include="ComplexChart\ComplexChartType.cs" />
     <Compile Include="ComplexChart\ComplexData.cs" />
-    <Compile Include="ComplexChart\ComplextDataset.cs" />
+    <Compile Include="ComplexChart\ComplexDataset.cs" />
+    <Compile Include="ComplexChart\Line\LineChart.cs" />
+    <Compile Include="ComplexChart\Line\LineChartOptions.cs" />
+    <Compile Include="ComplexChart\Radar\RadarChart.cs" />
+    <Compile Include="ComplexChart\Radar\RadarChartOptions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="GlobalChartOptions.cs" />
     <Compile Include="HtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleChart\Doughnut\DoughnutChart.cs" />
+    <Compile Include="SimpleChart\Doughnut\DoughnutChartOptions.cs" />
+    <Compile Include="SimpleChart\Pie\PieChart.cs" />
+    <Compile Include="SimpleChart\Pie\PieChartOptions.cs" />
+    <Compile Include="SimpleChart\PolarArea\PolarAreaChart.cs" />
+    <Compile Include="SimpleChart\PolarArea\PolarAreaOptions.cs" />
     <Compile Include="SimpleChart\SimpleChartBase.cs" />
     <Compile Include="SimpleChart\SimpleChartOptions.cs" />
     <Compile Include="SimpleChart\SimpleChartType.cs" />
