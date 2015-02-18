@@ -2,7 +2,7 @@
 using Chart.Mvc.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Chart.Mvc.Tests
+namespace Chart.Mvc.Tests.Extensions
 {
     [TestClass]
     public class ObjectExtensionsTests
