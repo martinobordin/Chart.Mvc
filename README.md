@@ -1,8 +1,17 @@
 # Chart.Mvc
 A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
 
+## Sample
+You can see the library in action here: http://www.martinobordin.it/Chart.Mvc
+
+## Installation
+Nuget package coming soon!
+
 ## How do I use it?
-To use the library you just need to insert a **canvas** in your HTML e call the method **Html.CreateChart()**, passing the canvas name and the chart object you want to use:
+To use the library you just need to:
+* add a reference to _Chart.Js_ library (http://www.chartjs.org)
+* insert a **canvas** in your HTML 
+* call the method **Html.CreateChart()**, passing the canvas name and the chart object you want to use
 
         @{
             var barChart = new BarChart();
