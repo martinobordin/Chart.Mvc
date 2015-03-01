@@ -11,16 +11,16 @@ Install using Nuget or compile binary from https://github.com/martinobordin/Char
 
 ## How do I use it?
 To use the library you just need to:
-* include a reference to _Chart.Js_ library (http://www.chartjs.org)
+* include a reference to _Chart.Js_ library (provided in Nuget Package or downloadable from http://www.chartjs.org, )
 * insert a **canvas** in your HTML 
 * call the method **Html.CreateChart()**, passing the canvas name and the chart object you want to use
 
         @{
             var barChart = new BarChart();
             barChart.ComplexData.Labels.AddRange(new []{ "January", "February",  "March", "April", "May", "June", "July"});
-            barChart.ComplexData.Datasets.AddRange(new List<ComplextDataset>
+            barChart.ComplexData.Datasets.AddRange(new List<ComplexDataset>
                                    { 
-                                      new ComplextDataset
+                                      new ComplexDataset
                                           {
                                               Data = new List<double> { 65, 59, 80, 81, 56, 55, 40 },
                                               Label = "My First dataset",
@@ -31,7 +31,7 @@ To use the library you just need to:
                                               PointHighlightFill = "#fff",
                                               PointHighlightStroke = "rgba(220,220,220,1)",
                                           }, 
-                                      new ComplextDataset
+                                      new ComplexDataset
                                           {
                                               Data = new List<double> { 28, 48, 40, 19, 86, 27, 90 },
                                               Label = "My Second dataset",
@@ -47,6 +47,8 @@ To use the library you just need to:
         
         <canvas id="myCanvas" width="400" height="400"></canvas>
         @Html.CreateChart("myCanvas", barChart)
+
+**Note:** Be sure to call CreateChart AFTER the reference to Chart.js file
 
 The chart object contains information like chart type, labels, data and visualization options.
 Property names are the same of the original _Chart.Js_, so it should be easy to use them.
