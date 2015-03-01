@@ -48,7 +48,9 @@ To use the library you just need to:
         <canvas id="myCanvas" width="400" height="400"></canvas>
         @Html.CreateChart("myCanvas", barChart)
 
-**Note:** Be sure to call CreateChart AFTER the reference to Chart.js file
+**Note:** 
+* Be sure to call CreateChart AFTER the reference to Chart.js file
+* The generated chart object will be named like the canvas plus "_chart" suffix (for the example above: myCanvas_chart). In this way you can attach handlers and call method like generateLegend().
 
 The chart object contains information like chart type, labels, data and visualization options.
 Property names are the same of the original _Chart.Js_, so it should be easy to use them.
