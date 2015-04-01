@@ -1,10 +1,12 @@
-﻿namespace Chart.Mvc.ComplexChart
+namespace Chart.Mvc.ComplexChart
 {
     /// <summary>
     /// The radar chart.
     /// </summary>
     public class RadarChart : ComplexChartBase
     {
+        private RadarChartOptions chartOptions = new RadarChartOptions();
+
         /// <summary>
         /// Gets the chart type.
         /// </summary>
@@ -23,7 +25,7 @@
         {
             get
             {
-                return new RadarChartOptions();
+                return chartOptions;
             }
         }
     }

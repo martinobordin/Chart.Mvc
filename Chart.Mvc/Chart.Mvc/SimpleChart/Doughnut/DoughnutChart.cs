@@ -1,10 +1,11 @@
-﻿namespace Chart.Mvc.SimpleChart
+namespace Chart.Mvc.SimpleChart
 {
     /// <summary>
     /// The doughnut chart.
     /// </summary>
     public class DoughnutChart : SimpleChartBase
     {
+        private DoughnutChartOptions chartOptions = new DoughnutChartOptions();
         /// <summary>
         /// Gets the chart type.
         /// </summary>
@@ -23,7 +24,7 @@
         {
             get
             {
-                return new DoughnutChartOptions();
+                return chartOptions;
             }
         }
     }

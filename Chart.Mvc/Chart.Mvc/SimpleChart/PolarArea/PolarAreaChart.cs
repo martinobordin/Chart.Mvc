@@ -1,10 +1,13 @@
-﻿namespace Chart.Mvc.SimpleChart
+namespace Chart.Mvc.SimpleChart
 {
     /// <summary>
     /// The polar area chart.
     /// </summary>
     public class PolarAreaChart : SimpleChartBase
     {
+
+        private PolarAreaOptions chartOptions = new PolarAreaOptions();
+
         /// <summary>
         /// Gets the chart type.
         /// </summary>
@@ -23,7 +26,7 @@
         {
             get
             {
-                return new PolarAreaOptions();
+                return chartOptions;
             }
         }
     }

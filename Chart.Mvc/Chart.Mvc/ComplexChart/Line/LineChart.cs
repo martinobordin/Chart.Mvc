@@ -1,10 +1,12 @@
-﻿namespace Chart.Mvc.ComplexChart
+namespace Chart.Mvc.ComplexChart
 {
     /// <summary>
     /// The line chart.
     /// </summary>
     public class LineChart : ComplexChartBase
     {
+        private LineChartOptions chartOptions = new LineChartOptions();
+
         /// <summary>
         /// Gets the chart type.
         /// </summary>
@@ -23,7 +25,7 @@
         {
             get
             {
-                return new LineChartOptions();
+                return chartOptions;
             }
         }
     }

@@ -1,10 +1,13 @@
-﻿namespace Chart.Mvc.SimpleChart
+namespace Chart.Mvc.SimpleChart
 {
     /// <summary>
     /// The pie chart.
     /// </summary>
     public class PieChart : SimpleChartBase
     {
+
+        private PieChartOptions chartOptions = new PieChartOptions();
+        
         /// <summary>
         /// Gets the chart type.
         /// </summary>
@@ -23,7 +26,7 @@
         {
             get
             {
-                return new PieChartOptions();
+                return chartOptions;
             }
         }
     }
