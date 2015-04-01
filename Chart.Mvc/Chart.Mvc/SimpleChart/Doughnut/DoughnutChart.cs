@@ -5,7 +5,7 @@ namespace Chart.Mvc.SimpleChart
     /// </summary>
     public class DoughnutChart : SimpleChartBase
     {
-        private DoughnutChartOptions chartOptions = new DoughnutChartOptions();
+        private readonly DoughnutChartOptions chartOptions = new DoughnutChartOptions();
         /// <summary>
         /// Gets the chart type.
         /// </summary>

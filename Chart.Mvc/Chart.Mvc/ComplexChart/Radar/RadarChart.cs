@@ -5,7 +5,7 @@ namespace Chart.Mvc.ComplexChart
     /// </summary>
     public class RadarChart : ComplexChartBase
     {
-        private RadarChartOptions chartOptions = new RadarChartOptions();
+        private readonly RadarChartOptions chartOptions = new RadarChartOptions();
 
         /// <summary>
         /// Gets the chart type.
