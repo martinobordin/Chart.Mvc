@@ -156,7 +156,7 @@
     <Compile Include="ComplexChart\Radar\RadarChartOptions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="GlobalChartOptions.cs" />
-    <Compile Include="HtmlExtensions.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleChart\Doughnut\DoughnutChart.cs" />
     <Compile Include="SimpleChart\Doughnut\DoughnutChartOptions.cs" />
