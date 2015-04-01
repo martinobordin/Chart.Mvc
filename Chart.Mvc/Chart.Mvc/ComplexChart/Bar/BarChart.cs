@@ -5,7 +5,7 @@ namespace Chart.Mvc.ComplexChart
     /// </summary>
     public class BarChart : ComplexChartBase
     {
-        private BarChartOptions chartOptions = new BarChartOptions();
+        private readonly BarChartOptions chartOptions = new BarChartOptions();
 
         /// <summary>
         /// Gets the chart type.

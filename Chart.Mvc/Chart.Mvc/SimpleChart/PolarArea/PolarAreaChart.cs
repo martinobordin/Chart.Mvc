@@ -6,7 +6,7 @@ namespace Chart.Mvc.SimpleChart
     public class PolarAreaChart : SimpleChartBase
     {
 
-        private PolarAreaOptions chartOptions = new PolarAreaOptions();
+        private readonly PolarAreaOptions chartOptions = new PolarAreaOptions();
 
         /// <summary>
         /// Gets the chart type.

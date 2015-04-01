@@ -1,10 +1,9 @@
 ﻿using System.Text;
 using System.Web.Mvc;
 using Chart.Mvc.ComplexChart;
-using Chart.Mvc.Extensions;
 using Chart.Mvc.SimpleChart;
 
-namespace Chart.Mvc
+namespace Chart.Mvc.Extensions
 {
     /// <summary>
     /// The html extensions.

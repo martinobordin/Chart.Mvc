@@ -6,7 +6,7 @@ namespace Chart.Mvc.SimpleChart
     public class PieChart : SimpleChartBase
     {
 
-        private PieChartOptions chartOptions = new PieChartOptions();
+        private readonly PieChartOptions chartOptions = new PieChartOptions();
         
         /// <summary>
         /// Gets the chart type.
