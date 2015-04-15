@@ -3,7 +3,7 @@ namespace Chart.Mvc.ComplexChart
     /// <summary>
     /// The radar chart.
     /// </summary>
-    public class RadarChart : ComplexChartBase
+    public class RadarChart : ComplexChartBase<RadarChartOptions>
     {
         private readonly RadarChartOptions chartOptions = new RadarChartOptions();
 
@@ -21,7 +21,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override ComplexChartOptions ChartConfiguration
+        public override RadarChartOptions ChartConfiguration
         {
             get
             {

@@ -3,7 +3,7 @@ namespace Chart.Mvc.ComplexChart
     /// <summary>
     /// The bar chart.
     /// </summary>
-    public class BarChart : ComplexChartBase
+    public class BarChart : ComplexChartBase<BarChartOptions>
     {
         private readonly BarChartOptions chartOptions = new BarChartOptions();
 
@@ -21,7 +21,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override ComplexChartOptions ChartConfiguration
+        public override BarChartOptions ChartConfiguration
         {
             get
             {

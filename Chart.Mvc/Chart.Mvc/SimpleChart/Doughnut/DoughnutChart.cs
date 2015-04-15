@@ -3,7 +3,7 @@ namespace Chart.Mvc.SimpleChart
     /// <summary>
     /// The doughnut chart.
     /// </summary>
-    public class DoughnutChart : SimpleChartBase
+    public class DoughnutChart : SimpleChartBase<DoughnutChartOptions>
     {
         private readonly DoughnutChartOptions chartOptions = new DoughnutChartOptions();
         /// <summary>
@@ -20,7 +20,7 @@ namespace Chart.Mvc.SimpleChart
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override SimpleChartOptions ChartConfiguration
+        public override DoughnutChartOptions ChartConfiguration
         {
             get
             {

@@ -3,7 +3,8 @@
     /// <summary>
     /// The complex chart base.
     /// </summary>
-    public abstract class ComplexChartBase
+    public abstract class ComplexChartBase<TComplexChartOptions> 
+        where TComplexChartOptions : ComplexChartOptions
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ComplexChartBase"/> class.
@@ -33,7 +34,7 @@
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public abstract ComplexChartOptions ChartConfiguration
+        public abstract TComplexChartOptions ChartConfiguration
         {
             get;
         }

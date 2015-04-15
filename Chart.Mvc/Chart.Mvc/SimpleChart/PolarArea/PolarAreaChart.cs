@@ -3,7 +3,7 @@ namespace Chart.Mvc.SimpleChart
     /// <summary>
     /// The polar area chart.
     /// </summary>
-    public class PolarAreaChart : SimpleChartBase
+    public class PolarAreaChart : SimpleChartBase<PolarAreaOptions>
     {
 
         private readonly PolarAreaOptions chartOptions = new PolarAreaOptions();
@@ -22,7 +22,7 @@ namespace Chart.Mvc.SimpleChart
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override SimpleChartOptions ChartConfiguration
+        public override PolarAreaOptions ChartConfiguration
         {
             get
             {

@@ -5,7 +5,8 @@ namespace Chart.Mvc.SimpleChart
     /// <summary>
     /// The simple chart base.
     /// </summary>
-    public abstract class SimpleChartBase
+    public abstract class SimpleChartBase<TSimpleChartOptions> 
+        where TSimpleChartOptions : SimpleChartOptions
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SimpleChartBase"/> class.
@@ -35,7 +36,7 @@ namespace Chart.Mvc.SimpleChart
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public abstract SimpleChartOptions ChartConfiguration
+        public abstract TSimpleChartOptions ChartConfiguration
         {
             get;
         }
