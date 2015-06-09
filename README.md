@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/martinobordin/Chart.Mvc.svg?label=ready&title=Ready)](http://waffle.io/martinobordin/Chart.Mvc)
+
 # Chart.Mvc
 A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
 
