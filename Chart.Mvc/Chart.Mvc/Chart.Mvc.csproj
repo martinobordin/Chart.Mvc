@@ -158,16 +158,12 @@
     <Compile Include="GlobalChartOptions.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleChart\Doughnut\DoughnutChart.cs" />
-    <Compile Include="SimpleChart\Doughnut\DoughnutChartOptions.cs" />
-    <Compile Include="SimpleChart\Pie\PieChart.cs" />
-    <Compile Include="SimpleChart\Pie\PieChartOptions.cs" />
-    <Compile Include="SimpleChart\PolarArea\PolarAreaChart.cs" />
-    <Compile Include="SimpleChart\PolarArea\PolarAreaOptions.cs" />
-    <Compile Include="SimpleChart\SimpleChartBase.cs" />
-    <Compile Include="SimpleChart\SimpleChartOptions.cs" />
-    <Compile Include="SimpleChart\SimpleChartType.cs" />
-    <Compile Include="SimpleChart\SimpleData.cs" />
+    <Compile Include="ComplexChart\Doughnut\DoughnutChart.cs" />
+    <Compile Include="ComplexChart\Doughnut\DoughnutChartOptions.cs" />
+    <Compile Include="ComplexChart\Pie\PieChart.cs" />
+    <Compile Include="ComplexChart\Pie\PieChartOptions.cs" />
+    <Compile Include="ComplexChart\PolarArea\PolarAreaChart.cs" />
+    <Compile Include="ComplexChart\PolarArea\PolarAreaOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

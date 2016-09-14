@@ -1,24 +1,26 @@
 ﻿using Chart.Mvc.ComplexChart;
-using Chart.Mvc.Extensions;
 using Chart.Mvc.SimpleChart;
-using Microsoft.AspNet.Razor.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Chart.Mvc.Extensions;
 
 namespace Chart.Mvc6.TagHelpers
 {
     public class LineChartTagHelper : TagHelper
     {
         public LineChart Chart { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             var chartData = this.GetChartData();
             string canvasId = "chartCanvas";
-            string canvasHtml = "<canvas id='" + canvasId +"' width='400' height='400'></canvas>";
+            string canvasHtml = "<canvas id='" + canvasId +"' width='" + Width + "' height='" + Height + "'></canvas>";
             var stringBuilder = new StringBuilder();
             stringBuilder.Append("<script type='text/javascript'>");
             stringBuilder.AppendFormat("var ctx = document.getElementById(\"{0}\").getContext(\"2d\");", canvasId);
