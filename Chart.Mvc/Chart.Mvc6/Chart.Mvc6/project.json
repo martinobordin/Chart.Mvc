@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-*",
+  "description": "Chart.Mvc6 Class Library",
+  "authors": [ "leedale" ],
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0"
+      },
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50"
+      ]
+    }
+  },
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1"
+  }
+}

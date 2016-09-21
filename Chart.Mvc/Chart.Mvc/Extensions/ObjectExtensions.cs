@@ -29,5 +29,16 @@ namespace Chart.Mvc.Extensions
         {
             return JsonConvert.SerializeObject(obj, JsonSerializerSettings);
         }
+
+        public static string ToCamelCase(this string s)
+        {
+            if (s != string.Empty && char.IsUpper(s[0]))
+            {
+                s = char.ToLower(s[0]) + s.Substring(1);
+            }
+
+            return s;
+        }
+       
     }
 }

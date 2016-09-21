@@ -25,9 +25,18 @@ namespace Chart.Mvc.ComplexChart
         }
 
         /// <summary>
+        /// Gets or sets the fill value.
+        /// </summary>
+        public bool Fill
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Gets or sets the fill color.
         /// </summary>
-        public string FillColor
+        public string BackgroundColor
         {
             get;
             set;
@@ -36,7 +45,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets or sets the stroke color.
         /// </summary>
-        public string StrokeColor
+        public string BorderColor
         {
             get;
             set;
@@ -45,7 +54,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets or sets the point color.
         /// </summary>
-        public string PointColor
+        public string PointBackgroundColor
         {
             get;
             set;
@@ -54,25 +63,7 @@ namespace Chart.Mvc.ComplexChart
         /// <summary>
         /// Gets or sets the point stroke color.
         /// </summary>
-        public string PointStrokeColor
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets the point highlight fill.
-        /// </summary>
-        public string PointHighlightFill
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets the point highlight stroke.
-        /// </summary>
-        public string PointHighlightStroke
+        public string PointBorderColor
         {
             get;
             set;

@@ -18,6 +18,20 @@
         /// <summary>
         /// The radar.
         /// </summary>
-        Radar
+        Radar,
+        /// <summary>
+        /// The polar area.
+        /// </summary>
+        PolarArea,
+
+        /// <summary>
+        /// The pie.
+        /// </summary>
+        Pie,
+
+        /// <summary>
+        /// The doughnut.
+        /// </summary>
+        Doughnut
     }
 }

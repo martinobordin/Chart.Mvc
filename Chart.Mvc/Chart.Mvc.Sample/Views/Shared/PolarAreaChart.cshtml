@@ -1,7 +1,8 @@
 ﻿@{
     const string Canvas = "PolarAreaChart";
     var chart = new PolarAreaChart();
-    chart.Data.AddRange(FakeSimpleChartData.Data);
+    chart.ComplexData.Labels.AddRange(FakeComplexChartData.Labels);
+    chart.ComplexData.Datasets.AddRange(FakeComplexChartData.Datasets);
 }
 <h3>@Canvas</h3>
 <canvas id="@Canvas" width="400" height="400"></canvas>

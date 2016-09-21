@@ -24,7 +24,7 @@ namespace Chart.Mvc.Sample
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/site").Include(
-                      "~/Scripts/Chart.js"));
+                      "~/Scripts/Chart.bundle.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
