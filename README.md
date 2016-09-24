@@ -17,7 +17,9 @@ To use the library you just need to:
 * include a reference to _Chart.Js_ library (provided in Nuget Package or downloadable from http://www.chartjs.org, )
 * insert a **canvas** in your HTML 
 * call the method **Html.CreateChart()**, passing the canvas name and the chart object you want to use
-
+        
+        @using Chart.Mvc.ComplexChart;
+        @using Chart.Mvc.Extensions
         @{
             var barChart = new BarChart();
             barChart.ComplexData.Labels.AddRange(new []{ "January", "February",  "March", "April", "May", "June", "July"});
