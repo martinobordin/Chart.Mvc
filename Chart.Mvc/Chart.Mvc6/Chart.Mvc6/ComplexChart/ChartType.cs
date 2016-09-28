@@ -1,4 +1,4 @@
-﻿namespace Chart.Mvc.ComplexChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The complex chart type.
@@ -18,6 +18,20 @@
         /// <summary>
         /// The radar.
         /// </summary>
-        Radar
+        Radar,
+        /// <summary>
+        /// The polar area.
+        /// </summary>
+        PolarArea,
+
+        /// <summary>
+        /// The pie.
+        /// </summary>
+        Pie,
+
+        /// <summary>
+        /// The doughnut.
+        /// </summary>
+        Doughnut
     }
 }

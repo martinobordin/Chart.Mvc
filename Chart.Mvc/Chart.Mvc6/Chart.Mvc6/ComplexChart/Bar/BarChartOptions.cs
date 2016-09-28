@@ -1,9 +1,9 @@
-﻿namespace Chart.Mvc.ComplexChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The bar chart options.
     /// </summary>
-    public class BarChartOptions : ComplexChartOptions
+    public class BarChartOptions : ChartOptions
     {
         /// <summary>
         /// Gets or sets the scale show grid lines.

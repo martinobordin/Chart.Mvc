@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Chart.Mvc.ComplexChart
+namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The complex data.

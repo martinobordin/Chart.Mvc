@@ -1,28 +1,28 @@
-namespace Chart.Mvc.SimpleChart
+namespace Chart.Mvc.Charts
 {
     /// <summary>
-    /// The polar area chart.
+    /// The pie chart.
     /// </summary>
-    public class PolarAreaChart : SimpleChartBase<PolarAreaOptions>
+    public class PieChart : ChartBase<PieChartOptions>
     {
 
-        private readonly PolarAreaOptions chartOptions = new PolarAreaOptions();
-
+        private readonly PieChartOptions chartOptions = new PieChartOptions();
+        
         /// <summary>
         /// Gets the chart type.
         /// </summary>
-        public override SimpleChartType ChartType
+        public override ComplexChartType ChartType
         {
             get
             {
-                return SimpleChartType.PolarArea;
+                return ComplexChartType.Pie;
             }
         }
 
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override PolarAreaOptions ChartConfiguration
+        public override PieChartOptions ChartConfiguration
         {
             get
             {

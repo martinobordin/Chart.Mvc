@@ -1,9 +1,9 @@
-namespace Chart.Mvc.ComplexChart
+namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The radar chart.
     /// </summary>
-    public class RadarChart : ComplexChartBase<RadarChartOptions>
+    public class RadarChart : ChartBase<RadarChartOptions>
     {
         private readonly RadarChartOptions chartOptions = new RadarChartOptions();
 

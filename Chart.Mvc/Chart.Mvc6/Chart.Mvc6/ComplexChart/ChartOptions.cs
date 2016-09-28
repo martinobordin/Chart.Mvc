@@ -1,9 +1,9 @@
-﻿namespace Chart.Mvc.ComplexChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The complex chart options.
     /// </summary>
-    public abstract class ComplexChartOptions : GlobalChartOptions
+    public abstract class ChartOptions : GlobalChartOptions
     {
         /// <summary>
         /// Gets or sets the legend template.

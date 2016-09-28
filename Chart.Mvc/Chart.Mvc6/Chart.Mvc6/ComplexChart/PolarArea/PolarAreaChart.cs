@@ -1,11 +1,14 @@
+using Chart.Mvc.Charts;
+
 namespace Chart.Mvc.Charts
 {
     /// <summary>
-    /// The bar chart.
+    /// The polar area chart.
     /// </summary>
-    public class BarChart : ChartBase<BarChartOptions>
+    public class PolarAreaChart : ChartBase<PolarAreaOptions>
     {
-        private readonly BarChartOptions chartOptions = new BarChartOptions();
+
+        private readonly PolarAreaOptions chartOptions = new PolarAreaOptions();
 
         /// <summary>
         /// Gets the chart type.
@@ -14,14 +17,14 @@ namespace Chart.Mvc.Charts
         {
             get
             {
-                return ComplexChartType.Bar;
+                return ComplexChartType.PolarArea;
             }
         }
 
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override BarChartOptions ChartConfiguration
+        public override PolarAreaOptions ChartConfiguration
         {
             get
             {

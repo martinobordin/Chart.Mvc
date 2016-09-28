@@ -1,9 +1,9 @@
-﻿namespace Chart.Mvc.SimpleChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The pie chart options.
     /// </summary>
-    public class PieChartOptions : SimpleChartOptions
+    public class PieChartOptions : ChartOptions
     {
         /// <summary>
         /// Gets or sets the percentage inner cutout.
