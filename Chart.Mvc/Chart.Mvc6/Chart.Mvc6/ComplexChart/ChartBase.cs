@@ -1,15 +1,15 @@
-﻿namespace Chart.Mvc.ComplexChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
-    /// The complex chart base.
+    /// The chart base.
     /// </summary>
-    public abstract class ComplexChartBase<TComplexChartOptions> 
-        where TComplexChartOptions : ComplexChartOptions
+    public abstract class ChartBase<TChartOptions> 
+        where TChartOptions : ChartOptions
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ComplexChartBase"/> class.
         /// </summary>
-        protected ComplexChartBase()
+        protected ChartBase()
         {
             this.ComplexData = new ComplexData();
         }
@@ -34,7 +34,7 @@
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public abstract TComplexChartOptions ChartConfiguration
+        public abstract TChartOptions ChartConfiguration
         {
             get;
         }

@@ -1,28 +1,26 @@
-namespace Chart.Mvc.SimpleChart
+namespace Chart.Mvc.Charts
 {
     /// <summary>
-    /// The pie chart.
+    /// The doughnut chart.
     /// </summary>
-    public class PieChart : SimpleChartBase<PieChartOptions>
+    public class DoughnutChart : ChartBase<DoughnutChartOptions>
     {
-
-        private readonly PieChartOptions chartOptions = new PieChartOptions();
-        
+        private readonly DoughnutChartOptions chartOptions = new DoughnutChartOptions();
         /// <summary>
         /// Gets the chart type.
         /// </summary>
-        public override SimpleChartType ChartType
+        public override ComplexChartType ChartType
         {
             get
             {
-                return SimpleChartType.Pie;
+                return ComplexChartType.Doughnut;
             }
         }
 
         /// <summary>
         /// Gets the chart configuration.
         /// </summary>
-        public override PieChartOptions ChartConfiguration
+        public override DoughnutChartOptions ChartConfiguration
         {
             get
             {

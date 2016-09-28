@@ -1,9 +1,9 @@
-namespace Chart.Mvc.ComplexChart
+namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The line chart.
     /// </summary>
-    public class LineChart : ComplexChartBase<LineChartOptions>
+    public class LineChart : ChartBase<LineChartOptions>
     {
         private readonly LineChartOptions chartOptions = new LineChartOptions();
 

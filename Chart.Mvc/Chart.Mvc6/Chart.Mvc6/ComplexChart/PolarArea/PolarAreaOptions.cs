@@ -1,9 +1,9 @@
-﻿namespace Chart.Mvc.SimpleChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The polar area options.
     /// </summary>
-    public class PolarAreaOptions : SimpleChartOptions
+    public class PolarAreaOptions : ChartOptions
     {
         /// <summary>
         /// Gets or sets the scale show label backdrop.

@@ -1,9 +1,9 @@
-﻿namespace Chart.Mvc.ComplexChart
+﻿namespace Chart.Mvc.Charts
 {
     /// <summary>
     /// The radar chart options.
     /// </summary>
-    public class RadarChartOptions : ComplexChartOptions
+    public class RadarChartOptions : ChartOptions
     {
         /// <summary>
         /// Gets or sets the angle line color.
