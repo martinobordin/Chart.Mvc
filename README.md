@@ -2,8 +2,12 @@
 
 # Chart.Mvc
 A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
-Please note that currently it's supported only Chart.JS v1, not the v2.
-For Chart.Js v1 documenation, check this link: https://github.com/chartjs/Chart.js/tree/v1.1.1/docs
+
+## Important
+Currently it's supported __only Chart.Js v1__, not the v2. Some functionalities are on the repository, but I don't know if\when I'll update the nuget package because in Chart.Js v2 they used different types for a single "property"; sometimes a
+property is a string, sometimes is an array..and that's not possible in c#
+
+For Chart.Js v1 documentation, check this link: https://github.com/chartjs/Chart.js/tree/v1.1.1/docs
 
 ## Sample
 You can see the library in action here: http://www.martinobordin.it/Chart.Mvc
