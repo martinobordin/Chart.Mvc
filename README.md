@@ -2,6 +2,8 @@
 
 # Chart.Mvc
 A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
+Please note that currently it's supported only Chart.JS v1, not the v2.
+For Chart.Js v1 documenation, check this link: https://github.com/chartjs/Chart.js/tree/v1.1.1/docs
 
 ## Sample
 You can see the library in action here: http://www.martinobordin.it/Chart.Mvc
