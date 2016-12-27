@@ -1,8 +1,4 @@
 ﻿using Chart.Mvc.Charts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Chart.Mvc6.Sample.ViewModels
 {

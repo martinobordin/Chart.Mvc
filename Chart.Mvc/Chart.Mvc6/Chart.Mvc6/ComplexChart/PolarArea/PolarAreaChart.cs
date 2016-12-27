@@ -1,5 +1,3 @@
-using Chart.Mvc.Charts;
-
 namespace Chart.Mvc.Charts
 {
     /// <summary>

@@ -1,15 +1,13 @@
 ﻿using Chart.Mvc.Charts;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Chart.Mvc.Extensions;
 
 namespace Chart.Mvc6.TagHelpers
 {
-    public abstract class ChartTagHelperBase<TChartOptions> : TagHelper 
+    public abstract class ChartTagHelperBase<TChartOptions> : TagHelper
         where TChartOptions : ChartOptions
     {
         public string Canvas { get; set; }
@@ -17,7 +15,7 @@ namespace Chart.Mvc6.TagHelpers
         public int Width { get; set; }
         public int Height { get; set; }
 
-        public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+        public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             var chartData = this.GetChartData();
             //string canvasId = "chartCanvas_" + Guid.NewGuid().ToString().Replace("-", "");
@@ -36,7 +34,7 @@ namespace Chart.Mvc6.TagHelpers
             stringBuilder.Append(Environment.NewLine);
             stringBuilder.Append("</script>");
 
-            output.Content.SetHtmlContent(stringBuilder.ToString());
+            return Task.FromResult(output.Content.SetHtmlContent(stringBuilder.ToString()));
         }
 
         private Tuple<string, string, string> GetChartData()
