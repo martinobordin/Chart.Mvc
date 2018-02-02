@@ -1,6 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/martinobordin/Chart.Mvc.png?label=ready&title=Ready)](https://waffle.io/martinobordin/Chart.Mvc)
-[![chart-mvc MyGet Build Status](https://www.myget.org/BuildSource/Badge/chart-mvc?identifier=17c0a6f0-4d12-4033-807f-1f79a46c4f97)](https://www.myget.org/)
-
 # Chart.Mvc
 A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
 
