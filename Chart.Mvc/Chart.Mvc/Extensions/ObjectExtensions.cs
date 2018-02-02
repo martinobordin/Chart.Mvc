@@ -1,8 +1,12 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-
-namespace Chart.Mvc.Extensions
+﻿namespace Chart.Mvc.Extensions
 {
+    using System.Collections.Generic;
+
+    using Chart.Mvc.Converters;
+
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Serialization;
+
     public static class ObjectExtensions
     {
         /// <summary>
@@ -11,7 +15,11 @@ namespace Chart.Mvc.Extensions
         private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
         {
             ContractResolver = new CamelCasePropertyNamesContractResolver(),
-            NullValueHandling = NullValueHandling.Ignore
+            NullValueHandling = NullValueHandling.Ignore,
+            Converters = new List<JsonConverter>
+                             {
+                                 new SingleOrComplexValueConverter()
+                             }
         };
 
         /// <summary>

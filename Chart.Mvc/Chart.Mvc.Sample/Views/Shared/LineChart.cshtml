@@ -1,10 +1,46 @@
-﻿@{
+﻿@using Chart.Mvc
+@using Chart.Mvc.Charts
+@using Chart.Mvc.Options
+@{
     const string Canvas = "LineChart";
-    var complexChart = new LineChart();
-    complexChart.ComplexData.Labels.AddRange(FakeComplexChartData.Labels);
-    complexChart.ComplexData.Datasets.AddRange(FakeComplexChartData.Datasets);
+
+
+    var dataset1 = new LineChartDataSet
+    {
+        Fill = new T1OrT2Value<bool?, string>(true),
+        Data = new T1OrT2Value<double?, double?[]>(new double?[] { 5, 6, 4, 8, 9, 10 }),
+        Labels = "Dataset 1"
+    };
+    var dataset2 = new LineChartDataSet
+    {
+        Fill = new T1OrT2Value<bool?, string>(true),
+        Data = new T1OrT2Value<double?, double?[]>(new double?[] { 5 * 2, 6 * 3, 4 * 4, 8 * 5, 9 * 6, 10 * 7 }),
+        Labels = "Dataset 2"
+    };
+    var options = new LineChartOptions
+    {
+        Title = new TitleConfigurations
+        {
+            Text = new T1OrT2Value<string, string[]>(Canvas)
+        }
+    };
+    var data = new LineChartData
+    {
+        Datasets = new[]
+                                                    {
+                                                dataset1,
+                                                dataset2
+                                            },
+        Labels = new[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" }
+    };
 }
 <h3>@Canvas</h3>
 <canvas id="@Canvas" width="400" height="400"></canvas>
 
-@Html.CreateChart(Canvas, complexChart)
+@Html.LineChart(Canvas, data, options)
+<h3>
+    Debug Info:
+</h3>
+<div class="text-danger">
+    @Html.DebugChart(Canvas, data, options)
+</div>
