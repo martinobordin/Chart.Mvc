@@ -1,4 +1,4 @@
-# Chart.Mvc
+# Chart.Mvc ![Nuget](https://img.shields.io/nuget/dt/Chart.Mvc?style=for-the-badge)
 A .NET wrapper for MVC 5 to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
 
 ## Sample
