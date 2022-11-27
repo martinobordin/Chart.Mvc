@@ -1,8 +1,11 @@
 # Chart.Mvc
-A .NET wrapper to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
+A .NET wrapper for MVC 5 to generate charts using the popular _Chart.Js_ library (http://www.chartjs.org).
 
 ## Sample
 You can see the library in action here: http://www.martinobordin.it/Chart.Mvc
+
+![Complex chart](/Sample1.png "Complex charts")
+![Simple chart](/Sample2.png "Simple charts")
 
 ## Installation
 Install using Nuget or compile binary from https://github.com/martinobordin/Chart.Mvc.git.
